@@ -18,5 +18,5 @@ export default defineConfig({
       'fonts': path.resolve(__dirname, './src/assets/fonts'),
     },
   },
-  base: '/Spaaaa/', // Reemplaza 'Spaaaa' con el nombre de tu repositorio
+  base: '/Spaaaa/', // Asegúrate de que esto es correcto para tu repositorio
 });

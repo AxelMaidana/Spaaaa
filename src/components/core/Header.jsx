@@ -46,11 +46,11 @@ export function Header() {
             
             <nav>
                 <ul>
-                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="/noticias.html">Noticias</a></li>
                     {usuario && usuario.rangoUser === "Administrador" ? (
                         <li><a href="empleo-admin.html">Solicitudes de empleo</a></li>
                     ) : (
-                        <li><a href="empleo.html">Empleo</a></li>
+                        <li><a href="/empleo.html">Empleo</a></li>
                     )}
 
                     {usuario && usuario.rangoUser === "Cliente" ? (
