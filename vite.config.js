@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 import path from 'path';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
@@ -15,7 +16,7 @@ export default defineConfig({
       'css': path.resolve(__dirname, './src/css'),
       'icons': path.resolve(__dirname, './src/assets/icons'),
       'fonts': path.resolve(__dirname, './src/assets/fonts'),
-
     },
   },
-})
+  base: '/Spaaaa/', // Reemplaza 'Spaaaa' con el nombre de tu repositorio
+});

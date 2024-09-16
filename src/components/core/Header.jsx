@@ -46,20 +46,20 @@ export function Header() {
             
             <nav>
                 <ul>
-                    <li><a href="./spaaaa/noticias.html">Noticias</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
                     {usuario && usuario.rangoUser === "Administrador" ? (
                         <li><a href="empleo-admin.html">Solicitudes de empleo</a></li>
                     ) : (
-                        <li><a href="./empleo.html">Empleo</a></li>
+                        <li><a href="empleo.html">Empleo</a></li>
                     )}
 
                     {usuario && usuario.rangoUser === "Cliente" ? (
-                        <li><a href="./../../turnos.html">Turnos</a></li>
+                        <li><a href="turnos.html">Turnos</a></li>
                     ) : (
                         usuario && usuario.rangoUser === "Administrador" ? (
                             <li><a href="historialReservas-admin.html">Reservas</a></li>
                         ) : (
-                            <li><a href="./turnos.html">Turnos</a></li>
+                            <li><a href="turnos.html">Turnos</a></li>
                         )
                     )}
 
